@@ -1,0 +1,58 @@
+{% extends 'blogs.html' %}
+{% block body %}
+        <!-- Live Style Switcher Ends - demo only -->
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+		<div class="container-fluid page-title">
+			<div class="content-banner">
+				<h2 class="text-center">
+					<span>Blog </span>
+					<span>Posts</span>
+				</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="content">
+					{% for blog in blogs %}
+					<!-- Article Starts -->
+					<article>
+						<a href="blog-post.html"><h4 class="text-center">{{ blog.title }}</h4></a>
+						<!-- Figure Starts -->
+						<figure class="blog-figure">
+							<a href="blog-post.html">
+								<img class="responsive-img" src="{{ blog.image.url }}" alt="">
+							</a>
+						</figure>
+						<!-- Figure Ends -->
+						<!-- Excerpt Starts -->
+						<div class="blog-excerpt">
+							<p>{{ blog.content|truncatechars:310 }}</p>
+							<a href="{% url 'blogview' blog.slug %}" class="btn readmore">
+								<span>Read more</span>
+							</a>
+							<!-- Meta Starts -->
+							<div class="meta">
+								<span><i class="fa fa-user"></i> <a href="#">Ohunayo Gege</a></span>
+								<span class="date"><i class="fa fa-calendar"></i> {{ blog.date|date:"d M, Y" }}</span>
+								<span><i class="fa fa-commenting"></i> <a href="{% url 'blogview' blog.slug %}#comments">{{ blog.comment_count }}</a></span>
+								<span><i class="fa fa-tags"></i> {{ blog.tags }}</span>
+								<span class="permalink"><i class="fa fa-link"></i> <a href="blog-post.html">Share</a></span>
+							</div>
+							<!-- Meta Ends -->
+						</div>
+						<!-- Excerpt Ends -->
+					</article>
+					<!-- Article Ends -->
+					{% endfor %}
+					<div class="col-12 mx-auto text-center">
+						<a href="#" class="btn btn-secondary refresh">
+							<span><i class="fa fa-refresh"></i>load more</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	</div>
+{% endblock %}

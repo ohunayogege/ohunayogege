@@ -1,0 +1,103 @@
+{% extends 'blogs.html' %}
+{% load markdown_extras %}
+{% block body %}
+
+<div class="wrapper">
+	<div class="container-fluid page-title post-title" style="background-repeat: no-repeat; background-image: url({{ blog.image.url  }}); background-repeat: no-repeat; background-position: center center !important;padding: 0; margin-bottom: 10px;">
+		<div class="content-banner">
+			<h2 class="text-center">
+				<span>{{ blog.title }}</span>
+			</h2>
+			<div class="meta">
+				<span><i class="fa fa-user"></i> <a href="#">Ohunayo Gege</a></span>
+				<span class="date"><i class="fa fa-calendar"></i> {{ blog.date|date:"d M, Y" }}</span>
+				<span><i class="fa fa-commenting"></i> <a href="#comments">{{ blog.comment_count }}</a></span>
+				<span><i class="fa fa-tags"></i> {{ blog.tags }}</span>
+				<span class="permalink"><i class="fa fa-link"></i> <a href="blog-post.html">Share</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="content">
+				<!-- Article Starts -->
+				<article>
+					<!-- Excerpt Starts -->
+					<div class="blog-excerpt">
+						<p>{{ blog.content | markdown | safe }}</p>
+						<!-- Meta Starts -->
+						<div class="meta meta-post-content">
+							<span><i class="fa fa-user"></i> <a href="#">Ohunayo Gege</a></span>
+							<span class="date"><i class="fa fa-calendar"></i> {{ blog.date|date:"d M, Y" }}</span>
+							<span><i class="fa fa-commenting"></i> <a href="#comments">{{ blog.comment_count }}</a></span>
+							<span><i class="fa fa-tags"></i> {{ blog.tags }}</span>
+							<span class="permalink"><i class="fa fa-link"></i> <a href="blog-post.html">Share</a></span>
+						</div>
+						<!-- Meta Ends -->
+					</div>
+					<!-- Excerpt Ends -->
+					<!-- Comments Starts -->
+					<div class="comments">
+						<h3 class="comments-heading uppercase">{{ blog.comment_count }} Comments</h3>
+						<ul class="comments-list">
+							{% for comment in comments %}
+							<li>
+								<!-- Comment Starts -->
+								<div class="comment">
+									<img class="comment-avatar pull-left" alt="" src="/static/img/blog/user1.jpg">
+									<div class="comment-body">
+										<div class="meta-data">
+											<span class="comment-author">{{ comment.name }}</span>
+											<span class="comment-date pull-right">{{ comment.date|date:"d M, Y" }}</span>
+										</div>
+										<div class="comment-content">
+										<p>{{ comment.content }}</p></div>
+										<div>
+											<!-- <a class="comment-reply" href="#">Reply</a> -->
+										</div>	
+									</div>
+								</div>
+								<!-- Comment Ends -->
+							</li>
+							{% endfor %}
+						</ul>
+						<h3 class="comments-heading uppercase add-comment">Add a comment</h3>
+						<!-- Comments Form Starts -->
+						<div class="comments-form">
+							<form role="form" method="POST">
+								<!-- Name Field Starts -->
+                                <div class="form-group col-12">
+									<i class="fa fa-user prefix"></i>
+									<input id="name" name="name" type="text" class="form-control" placeholder="YOUR NAME" required>
+								</div>
+                                <!-- Name Field Ends -->
+                                <!-- Email Field Starts -->
+                                <div class="form-group col-12">
+									<i class="fa fa-envelope prefix"></i>
+									<input id="email" name="email" type="text" class="form-control" placeholder="YOUR EMAIL" required>
+								</div>
+                                <!-- Email Field Ends -->
+                                <!-- Comment Textarea Starts -->
+                                <div class="form-group col-xl-12">
+									<i class="fa fa-comments prefix"></i>
+									<textarea id="comment" name="comment" class="form-control" placeholder="YOUR COMMENT" required></textarea>
+								</div>
+                                <!-- Comment Textarea Ends -->
+								<!-- Submit Form Button Starts -->
+                                <div class="col s12 m12 l6 xl6 submit-form">
+                                    <button class="btn button-animated" type="submit" name="send">
+										<span><i class="fa fa-comment"></i> Add comment</span>
+									</button>
+                                </div>
+                                <!-- Submit Form Button Ends -->
+							</form>
+						</div>
+						<!-- Comments Form Ends -->
+					</div>
+				</article>
+				<!-- Article Ends -->
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

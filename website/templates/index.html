@@ -1,0 +1,656 @@
+{% extends 'app.html' %}
+
+
+{% block body %}
+
+<!-- Main Content Starts -->
+{% load humanize %}
+<main id="main">
+    <!-- Back To Home Starts [ONLY MOBILE] -->
+    <span class="back-mobile" id="back-mobile"><i class="fa fa-arrow-left"></i></span>
+    <!-- Back To Home Ends [ONLY MOBILE] -->
+    <!-- Home Section Starts -->
+    <section id="home" class="active">
+        <!-- Text Rotator Starts -->
+        <div class="main-text-container">
+            <div class="main-text" id="selector">
+                <h3>Welcome...</h3>
+                <h1 class="ah-headline">
+			I'm
+				<span class="ah-words-wrapper">
+					<b class="is-visible">Ohunayo Gege</b>
+					<b>a web developer</b>
+					<b>a blogger</b>
+					<b>a freelancer</b>
+					<b>a graphic designer</b>
+					<b>a ui/ux designer</b>
+				</span>
+			</h1>
+                <p>I'm a Freelance UI/UX Designer and Web Developer based in Lagos, Nigeria. I strives to build immersive and beautiful Web Applications through carefully crafted code, user-centric design and also fully work around with APIs.</p>
+                <div class="call-to-actions-home">
+                    <div class="text-left">
+                        <a href="#about" class="btn link-portfolio-one"><span><i class="fa fa-user"></i>more about me</span></a>
+                        <a href="#work" class="btn btn-secondary link-portfolio-two"><span><i class="fa fa-suitcase"></i>portfolio</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Text Rotator Ends -->
+    </section>
+    <!-- Home Section Ends -->
+    <!-- About Section Starts -->
+    <section id="about">
+        <!-- Main Heading Starts -->
+        <div class="container page-title text-center">
+            <h2 class="text-center">about <span>me</span></h2>
+            <span class="title-head-subtitle">I design and code beautiful things, and I love what I do.</span>
+        </div>
+        <!-- Main Heading Ends -->
+        <div class="container infos">
+            <div class="row personal-info">
+                <!-- Personal Infos Starts -->
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="image-container">
+						<img class="img-fluid d-block" src="/static/img/name.jpg"  alt="" />
+					</div>
+					<p  class="d-block d-md-none">I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+				</div>
+				<div class="row col-xl-6 col-lg-6 col-md-12">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+						<ul class="list-1">
+							<li>
+								<h6><span class="font-weight-600">First Name</span>Gege</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Last Name</span>Ohunayo</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Birthdate</span>10 February 199x</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Nationality</span>Nigerian</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Experience</span>7 years</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Address</span>Lagos, Nigeria</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">WhatsApp</span>+2348118175493</h6>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+						<ul class="list-2">
+							<li>
+								<h6><span class="font-weight-600">Freelance</span>Available</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Languages</span>English, Yoruba</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Phone</span>+2348149983395</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Email</span>contact@ohunayogege.com</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Instagram</span>@ohunayogege</h6>
+							</li>
+							<li>
+								<h6><span class="font-weight-600">Twitter</span>@ohunayogege</h6>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 resume-btn-container">
+						<a href="/static/ohunayo-cv.docx" class="btn btn-resume"><span><i class="fa fa-download"></i>download my cv</span></a>
+					</div>
+				</div>
+                <!-- Personal Infos Ends -->
+            </div>
+        </div>
+        <!-- Download CV Starts -->
+        <div class="container col-12 mx-auto text-center">
+            <hr class="about-section" />
+        </div>
+        <!-- Download CV Ends -->
+        <!-- Resume Starts -->
+        <div class="resume-container">
+            <div class="container">
+                <div class="row">
+                    <!-- Experience Starts -->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <h2 class="font-weight-600 uppercase title-section">experience</h2>
+                        <div class="resume-items">
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2020 - 20--</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										web developer 
+										<span class="separator"></span>
+                                        <span class="font-weight-700">Touchcore</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Responsible for participating in the full life cycle of new website development projects, and for implementing and maintaining best practice procedures in all areas of work. Also in charge of writing, developing and managing the content of websites.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2018 - 2019</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										web developer 
+										<span class="separator"></span>
+                                        <span class="font-weight-700">Entrebiz</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Creating website promotional material, web banners, and optimized landing and home pages, Establishing the core purpose of the website by identifying its users, Uploading and installing anti-virus and other security software onto websites, Building up and enhancing integration within existing systems, etc...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2010 - 2014</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										web developer
+										<span class="separator"></span>
+                                        <span class="font-weight-700">Webbiwood</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Creating website promotional material, web banners, and optimized landing and home pages, Establishing the core purpose of the website by identifying its users, Uploading and installing anti-virus and other security software onto websites, Building up and enhancing integration within existing systems, Branding and managing of websites and other products, etc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                        </div>
+
+                    </div>
+                    <!-- Experience Ends -->
+                    <!-- Education Starts -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 skills-container">
+                        <h2 class="font-weight-600 uppercase title-section">Education</h2>
+                        <div class="resume-items">
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2014 - 2018</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										B.Sc Computer Science 
+										<span class="separator"></span>
+                                        <span class="font-weight-700">National Open University of Nigeria</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2006 - 2012</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										SSCE 
+										<span class="separator"></span>
+                                        <span class="font-weight-700">World Missionary College</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                            <!-- Item Starts -->
+                            <div class="item">
+                                <span class="bullet"></span>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <span class="year"><i class="fa fa-calendar"></i><i class="fa fa-caret-right"></i>2000 - 2005</span>
+                                        <span class="d-block font-weight-400 uppercase">
+										FLSC
+										<span class="separator"></span>
+                                        <span class="font-weight-700">Sunshine Nursery & Primary School</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item Ends -->
+                        </div>
+                    </div>
+                    <!-- Education Ends -->
+                </div>
+                <!-- Skills Starts -->
+                <div class="row">
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12">
+                        <h2 class="font-weight-600 uppercase title-section skills-title">skills</h2>
+                    </div>
+					<!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">html</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="80" style="width: 80%;"></span>
+                            <span class="percent" style="right: calc(20% - 21px);">80%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">javascript</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="60" style="width: 60%;"></span>
+                            <span class="percent" style="right: calc(40% - 21px);">60%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">css</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="75" style="width: 75%;"></span>
+                            <span class="percent" style="right: calc(25% - 21px);">75%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">jquery</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="65" style="width: 65%;"></span>
+                            <span class="percent" style="right: calc(35% - 21px);">65%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">wordpress</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="90" style="width: 90%;"></span>
+                            <span class="percent" style="right: calc(10% - 21px);">90%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    <!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">python</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="85" style="width: 85%;"></span>
+                            <span class="percent" style="right: calc(15% - 21px);">85%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+					<!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">django</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="82" style="width: 82%;"></span>
+                            <span class="percent" style="right: calc(20% - 21px);">82%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+					<!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">Vue js</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="75" style="width: 75%;"></span>
+                            <span class="percent" style="right: calc(25% - 21px);">75%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                    
+					<!-- Skill Bar Starts -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <span class="skill-text">photoshop</span>
+                        <div class="chart-bar">
+                            <span class="item-progress" data-percent="80" style="width: 80%;"></span>
+                            <span class="percent" style="right: calc(20% - 21px);">80%<div class="arrow"></div></span>
+                        </div>
+                    </div>
+                    <!-- Skill Bar Ends -->
+                </div>
+                <!-- Skills Starts -->
+            </div>
+
+            <!-- Resume Ends -->
+        </div>
+    </section>
+    <!-- About Section Ends -->
+    <!-- Portfolio Section Starts -->
+    <section id="work">
+        <div class="portfolio-container">
+            <!-- Main Heading Starts -->
+            <div class="container page-title text-center">
+                <h2 class="text-center">my <span>portfolio</span></h2>
+				<span class="title-head-subtitle">a few recent design and coding projects. Want to see more? Email me.</span>
+            </div>
+            <!-- Main Heading Ends -->
+            <div class="portfolio-section">
+                <div class="container cd-container">
+                    <div>
+                        <!-- Portfolio Items Starts -->
+                        <ul class="row" id="portfolio-items">
+                            
+                            {% for portfolio in portfolios %}
+							<!-- Portfolio Item Starts -->
+                            <li class="col-12 col-md-6 col-lg-4">
+                                <a href="#0" data-type="project-{{ portfolio.id }}">
+                                    <img src="{{ portfolio.display_image.url }}" alt="Project" class="img-fluid">
+                                    <div><span>{{ portfolio.p_type }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Portfolio Item Ends -->
+                            {% endfor %}
+                        </ul>
+                        <!-- Portfolio Items Ends -->
+                    </div>
+                </div>
+            </div>
+			<!-- PORTFOLIO OVERLAY STARTS -->
+			<div class="portfolio-overlay"></div>
+			<!-- PORTFOLIO OVERLAY ENDS -->
+        </div>
+
+        {% for portfolio in portfolios %}
+
+
+        <!-- Portfolio Project Content Starts -->
+        <div class="project-info-container project-{{ portfolio.id }}">
+            <!-- Main Content Starts -->
+            <div class="project-info-main-content">
+                <img src="{{ portfolio.display_image.url }}" alt="Project Image">
+            </div>
+            <!-- Main Content Ends -->
+            <!-- Project Details Starts -->
+            <div class="projects-info row">
+                <div class="col-12 col-sm-6 p-none">
+                    <h3 class="font-weight-600 uppercase">{{ portfolio.p_type }}</h3>
+                    <ul class="project-details">
+                        <li><i class="fa fa-file-text-o"></i><span class="font-weight-400 project-label"> Project </span>: <span class="font-weight-600 uppercase">{{ portfolio.project_name }}</span>
+                        </li>
+                        <li><i class="fa fa-user-o"></i><span class="font-weight-400 project-label"> Client </span>: <span class="font-weight-600 uppercase">{{ portfolio.client }}</span>
+                        </li>
+                        <li><i class="fa fa-hourglass-o"></i><span class="font-weight-400 project-label"> Duration </span>: <span class="font-weight-600 uppercase">{{ portfolio.duration }}</span>
+                        </li>
+                        <li><i class="fa fa-code"></i> <span class="font-weight-400 project-label"> Stacks</span> : <span class="font-weight-600 uppercase">{{ portfolio.tech }}</span>
+                        </li>
+                        <!-- <li><i class="fa fa-money"></i> <span class="font-weight-400 project-label"> Price</span> : <span class="font-weight-600 uppercase">₦{{ portfolio.price|intcomma }}</span>
+                        </li> -->
+                    </ul>
+                    {% if portfolio.link == 'null' %}
+                    {% else %}
+                    <a href="{{ portfolio.link }}" target="blank" class="btn"><span><i class="fa fa-external-link"></i>preview</span></a>
+                    {% endif %}
+                </div>
+                <div class="col-6 p-none text-right">
+                    <a href="#" class="btn btn-secondary close-project"><span><i class="fa fa-close"></i>Close</span></a>
+                </div>
+            </div>
+            <!-- Project Details Ends -->
+        </div>
+        <!-- Portfolio Project Content Ends -->
+
+        <!-- Portfolio Project Content Starts -->
+        <div class="project-info-container project-100">
+            <!-- Main Content Starts -->
+            <div class="project-info-main-content">
+                <div class="videocontainer">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/7e90gBu4pas?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Main Content Ends -->
+            <!-- Project Details Starts -->
+            <div class="projects-info row">
+                <div class="col-12 col-sm-6 p-none">
+                    <h3 class="font-weight-600 uppercase">Youtube Format</h3>
+                    <ul class="project-details">
+                        <li><i class="fa fa-file-text-o"></i><span class="font-weight-400 project-label"> Project </span>: <span class="font-weight-600 uppercase">Website</span>
+                        </li>
+                        <li><i class="fa fa-user-o"></i><span class="font-weight-400 project-label"> Client </span>: <span class="font-weight-600 uppercase">Envato</span>
+                        </li>
+                        <li><i class="fa fa-hourglass-o"></i><span class="font-weight-400 project-label"> Duration </span>: <span class="font-weight-600 uppercase">3 months</span>
+                        </li>
+                        <li><i class="fa fa-code"></i> <span class="font-weight-400 project-label"> Technologies</span> : <span class="font-weight-600 uppercase">html, javascript</span>
+                        </li>
+                        <li><i class="fa fa-money"></i> <span class="font-weight-400 project-label"> Budget</span> : <span class="font-weight-600 uppercase">1550 USD</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn"><span><i class="fa fa-external-link"></i>preview</span></a>
+                </div>
+                <div class="col-6 p-none text-right">
+                    <a href="#" class="btn btn-secondary close-project"><span><i class="fa fa-close"></i>Close</span></a>
+                </div>
+            </div>
+            <!-- Project Details Ends -->
+        </div>
+        <!-- Portfolio Project Content Ends -->
+        {% endfor %}
+        <!-- Portfolio Project Content Starts -->
+        
+        <!-- Portfolio Project Content Starts -->
+        <div class="project-info-container project" style="display: none">
+            <!-- Main Content Starts -->
+            <div class="project-info-main-content">
+                <video id="video" class="responsive-video" controls poster="/static/img/projects/project-6.jpg">
+                    <source src="/static/img/projects/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Main Content Ends -->
+            
+            <!-- Project Details Ends -->
+        </div>
+        <!-- Portfolio Project Content Ends -->
+		
+        <span class="back-mobile close-project"><i class="fa fa-arrow-left"></i></span>
+    </section>
+    <!-- Portfolio Section Ends -->
+    <!-- Contact Section Starts -->
+    <section id="contact">
+        <div class="contact-container">
+            <!-- Main Heading Starts -->
+            <div class="container page-title text-center">
+                <h2 class="text-center">get <span>in touch</span></h2>
+				<span class="title-head-subtitle">I’m always open to discussing product design work or partnerships.</span>
+            </div>
+            <!-- Main Heading Ends -->
+            <div class="container">
+                <div class="row contact">
+                    <!-- Contact Infos Starts -->
+                    <div class="col-12 col-md-4 col-xl-4 leftside">
+                        <ul class="custom-list">
+                            <li>
+                                <h6 class="font-weight-600"> <span class="contact-title">WhatsApp</span><i class="fa fa-whatsapp"></i><span class="contact-content">+2348118175493</span></h6>
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600"> <span class="contact-title">Phone</span><i class="fa fa-whatsapp"></i><span class="contact-content">+2348149983395</span></h6>
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600"> <span class="contact-title">email</span><i class="fa fa-envelope-o fs-14"></i><span class="contact-content">contact@ohunayogege.com</span></h6>
+
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600"><span class="contact-title">instagram</span><i class="fa fa-instagram"></i><span class="contact-content">ohunayogege</span></h6>
+
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600"><span class="contact-title">Twitter </span><i class="fa fa-twitter"></i><span class="contact-content">ohunayogege</span></h6>
+                            </li>
+                        </ul>
+
+                        <!-- Social Media Profiles Starts -->
+
+                        <div class="social">
+                            <h6 class="font-weight-600 uppercase">Social Profiles</h6>
+                            <ul class="list-inline social social-intro text-center p-none">
+                                <li class="facebook"><a title="Facebook" href="https://facebook.com/officialgege"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="twitter"><a title="Twitter" href="https://twitter.com/ohunayogege"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li class="dribbble"><a title="Instagram" href="https://instagram.com/ohunayogege"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Media Profiles Ends -->
+                    </div>
+                    <!-- Contact Infos Ends -->
+                    <!-- Contact Form Starts -->
+                    <div class="col-12 col-md-8 col-xl-8 rightside">
+                        <p>
+                            If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
+                        </p>
+                        <form class="contactform" id="contactform" method="POST">
+                        	
+                        	<div id="output" class="text-center font-weight-600 uppercase alert"></div>
+                            <div class="row">
+                                <!-- Name Field Starts -->
+                                <div class="form-group col-xl-6"> <i class="fa fa-user prefix"></i>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="YOUR NAME">
+                                </div>
+                                <!-- Name Field Ends -->
+                                <!-- Email Field Starts -->
+                                <div class="form-group col-xl-6"> <i class="fa fa-envelope prefix"></i>
+                                    <input id="email" type="email" name="email" class="form-control" placeholder="YOUR EMAIL">
+                                </div>
+                                <!-- Email Field Ends -->
+                                <!-- Comment Textarea Starts -->
+                                <div class="form-group col-xl-12"> <i class="fa fa-comments prefix"></i>
+                                    <textarea id="message" name="message" class="form-control" placeholder="YOUR MESSAGE"></textarea>
+                                </div>
+                                <!-- Comment Textarea Ends -->
+                            </div>
+                            <!-- Submit Form Button Starts -->
+                            <div class="submit-form">
+                                <button class="btn button-animated" type="submit" name="send"><span><i class="fa fa-send"></i> Send Message</span></button>
+                            </div>
+                            <!-- Submit Form Button Ends -->
+                            <div class="form-message"> <span class="output_message text-center font-weight-600 uppercase"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Form Ends -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+    <!-- Blog Section Starts -->
+    <section id="blog">
+        <div class="container page-title text-center">
+            <h2 class="text-center">latest <span>posts</span></h2>
+			<span class="title-head-subtitle">tips, insights, and best practices about web design and developpment</span>
+        </div>
+        <div class="container">
+            <div class="row">
+            	{% for blog in blogs %}
+                <!-- Article Starts -->
+                <div class="col-12 col-sm-6">
+                    <article>
+                        <!-- Figure Starts -->
+                        <figure class="blog-figure">
+                            <a href="{% url 'blogview' blog.slug %}">
+                                <img class="img-fluid" src="{{ blog.image.url }}" alt="">
+                            </a>
+                            <div class="post-date"> <span>{{ blog.date|date:"d" }}</span>
+                                <span><b>{{ blog.date|date:"M" }}</b></span>
+                            </div>
+                        </figure>
+                        <!-- Figure Ends -->
+                        <a href="{% url 'blogview' blog.slug %}">
+                            <h4>{{ blog.title }}</h4>
+                        </a>
+                        <!-- Excerpt Starts -->
+                        <div class="blog-excerpt">
+                            <p>{{ blog.content|truncatechars:320 }}</p>
+                            <a href="{% url 'blogview' blog.slug %}" class="btn readmore"><span>Read more</span></a>
+                        </div>
+                        <!-- Excerpt Ends -->
+                    </article>
+                </div>
+                <!-- Article Ends -->
+                {% endfor %}
+
+                <!-- Link To Blog Starts -->
+                <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 allposts"> <a href="{% url 'blog' %}" class="btn btn-secondary"><span><i class="fa fa-comments"></i>All posts</span></a>
+                </div>
+                <!-- Link To Blog Ends -->
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section Ends -->
+
+    
+</main>
+
+<script src="/static/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+	$('#contactform').on('submit', function(e){
+
+		e.preventDefault();
+
+		  $.ajax({
+		       type : "POST",
+		       url: "{% url 'ajax_contact' %}", /* django ajax posting url  */
+		       data: {
+		        name : $('#name').val(),
+		        email : $('#email').val(),
+		        message : $('#message').val(),
+		        csrfmiddlewaretoken: '{{ csrf_token }}',
+		        dataType: "json",
+
+		       },
+		       
+		       success: function(data){
+                if (data.error){
+                    $('#contactform').find('.alert').removeClass('alert-success');
+                    $('#contactform').find('.alert').addClass('alert-warning');
+                    $('#output').html(data.error) /* response message */
+                }
+                else{
+                    $('#contactform').find('.alert').removeClass('alert-warning');
+                    $('#contactform').find('.alert').addClass('alert-success');
+                    $('#output').html(data.msg) /* response message */
+                }
+                
+		       },
+
+		       failure: function() {
+          //       console.log(typeof(data.msg));
+		       	// $('.alert').html(data.msg+"hello")
+		           
+		       }
+
+
+		   });
+
+
+	});
+</script>
+
+{% endblock %}
