@@ -37,10 +37,35 @@
 
 </head>
 
-<body class="dark payment">
+<body class="dark blog">
 	<div class="page">
-        {% block body %}
-        {% endblock %}
+		<div class="wrapper">
+		<div class="container-fluid page-title">
+			<div class="content-banner">
+				<h2 class="text-center">
+					<span>Make </span>
+					<span>Payment</span>
+				</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="content">
+					{% block body %}
+			        {% for payment in payments %}
+						{{ payment.name }}
+						{{ payment.mobile }}
+						{{ payment.price }}
+						{{ payment.description }}
+						{{ payment.code }}
+						{% endfor %}
+			        {% endblock %}
+					
+				</div>
+			</div>
+		</div>
+    </div>
+        
     </div>
     <!-- Wrapper Ends -->
     <!-- Preloader Starts -->

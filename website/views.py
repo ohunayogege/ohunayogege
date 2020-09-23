@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
-from .models import Blog, Portfolio, Comment
+from .models import Blog, Portfolio, Comment, PaymentCode
 # Create your views here.
 
 def index(request):
@@ -28,9 +28,34 @@ def ajax_contact(request):
             response = {
                          'msg':'Your form has been submitted successfully' # response message
             			}
-            print(True)
             return JsonResponse(response) # return response as JSON
         else:
-        	print(False)
         	response = { 'error': 'Please check all fields' }
         	return JsonResponse(response)
+
+
+def ajax_comment(request):
+    if request.is_ajax():
+        name = request.POST.get('name', None) # getting data from input name id
+        email = request.POST.get('email', None)  # getting data from input email id
+        content = request.POST.get('content', None)  # getting data from input content id
+        blog = request.POST.get('blog', None)  # getting data from input blog id
+        blog = Blog.objects.get(id=blog)
+        if email and name and content: #cheking if first_name and last_name have value
+            instance = Comment.objects.create(blog=blog, content=content, name=name, email=email)
+            if instance:
+                msg = 'Comment Posted Successfully.'
+            else:
+                msg = 'Error Publishing Comment. Try Again.'
+            response = {
+                         'msg': msg # response message
+                        }
+            return JsonResponse(response) # return response as JSON
+        else:
+            response = { 'error': 'Please check all fields' }
+            return JsonResponse(response)
+
+def payment(request):
+    code = request.GET.get('code')
+    payments = PaymentCode.objects.filter(code=code)
+    return render(request, 'payment.html', {'payments': payments})

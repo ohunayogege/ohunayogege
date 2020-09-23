@@ -11,7 +11,7 @@
 			<div class="meta">
 				<span><i class="fa fa-user"></i> <a href="#">Ohunayo Gege</a></span>
 				<span class="date"><i class="fa fa-calendar"></i> {{ blog.date|date:"d M, Y" }}</span>
-				<span><i class="fa fa-commenting"></i> <a href="#comments">{{ blog.comment_count }}</a></span>
+				<span><i class="fa fa-commenting"></i> <a href="#comment">{{ blog.comment_count }}</a></span>
 				<span><i class="fa fa-tags"></i> {{ blog.tags }}</span>
 				<span class="permalink"><i class="fa fa-link"></i> <a href="blog-post.html">Share</a></span>
 			</div>
@@ -37,11 +37,11 @@
 					</div>
 					<!-- Excerpt Ends -->
 					<!-- Comments Starts -->
-					<div class="comments">
+					<div class="comments" id="comment">
 						<h3 class="comments-heading uppercase">{{ blog.comment_count }} Comments</h3>
 						<ul class="comments-list">
 							{% for comment in comments %}
-							<li>
+							<li class="comm">
 								<!-- Comment Starts -->
 								<div class="comment">
 									<img class="comment-avatar pull-left" alt="" src="/static/img/blog/user1.jpg">
@@ -63,24 +63,26 @@
 						</ul>
 						<h3 class="comments-heading uppercase add-comment">Add a comment</h3>
 						<!-- Comments Form Starts -->
-						<div class="comments-form">
+						<div class="comments-form" id="formcomment">
+							<div id="output" class="text-center font-weight-600 uppercase none alert"></div>
 							<form role="form" method="POST">
+								<input type="hidden" name="blog" value="{{ blog.id }}" id="blog">
 								<!-- Name Field Starts -->
                                 <div class="form-group col-12">
 									<i class="fa fa-user prefix"></i>
-									<input id="name" name="name" type="text" class="form-control" placeholder="YOUR NAME" required>
+									<input id="name" name="name" type="text" class="form-control" placeholder="YOUR NAME">
 								</div>
                                 <!-- Name Field Ends -->
                                 <!-- Email Field Starts -->
                                 <div class="form-group col-12">
 									<i class="fa fa-envelope prefix"></i>
-									<input id="email" name="email" type="text" class="form-control" placeholder="YOUR EMAIL" required>
+									<input id="email" name="email" type="text" class="form-control" placeholder="YOUR EMAIL">
 								</div>
                                 <!-- Email Field Ends -->
                                 <!-- Comment Textarea Starts -->
                                 <div class="form-group col-xl-12">
 									<i class="fa fa-comments prefix"></i>
-									<textarea id="comment" name="comment" class="form-control" placeholder="YOUR COMMENT" required></textarea>
+									<textarea id="content" name="content" class="form-control" placeholder="YOUR COMMENT"></textarea>
 								</div>
                                 <!-- Comment Textarea Ends -->
 								<!-- Submit Form Button Starts -->
@@ -100,4 +102,63 @@
 		</div>
 	</div>
 </div>
+
+<script src="/static/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+	$('#formcomment').on('submit', function(e){
+
+		e.preventDefault();
+
+		  $.ajax({
+		       type : "POST",
+		       url: "{% url 'ajax_comment' %}", /* django ajax posting url  */
+		       data: {
+		        name : $('#name').val(),
+		        email : $('#email').val(),
+		        content : $('#content').val(),
+		        blog : $('#blog').val(),
+		        csrfmiddlewaretoken: '{{ csrf_token }}',
+		        dataType: "json",
+
+		       },
+		       
+		       success: function(data){
+                if (data.error){
+                    $('#formcomment').find('.alert').removeClass('alert-success');
+                    $('#formcomment').find('.alert').removeClass('none');
+                    $('#formcomment').find('.alert').addClass('alert-warning');
+                    $('#output').html(data.error) /* response message */
+                }
+                else{
+                    $('#formcomment').find('.alert').removeClass('alert-warning');
+                    $('#formcomment').find('.alert').removeClass('none');
+                    $('#formcomment').find('.alert').addClass('alert-success');
+                    $('#output').html(data.msg) /* response message */
+                    setTimeout(redirect, 2000);
+                }
+                
+		       },
+
+		       failure: function() {
+          //       console.log(typeof(data.msg));
+		       	// $('.alert').html(data.msg+"hello")
+		           
+		       }
+
+
+		   });
+
+
+	});
+</script>
+<script type="text/javascript">
+	function redirect(){
+       window.location.href = "";
+    }
+</script>
+<style type="text/css">
+	.none {
+		display: none;
+	}
+</style>
 {% endblock %}

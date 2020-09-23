@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Portfolio, Blog, Comment, Reply, Category, SlideImage
+from .models import Portfolio, Blog, Comment, Reply, Category, SlideImage, PaymentCode
 # Register your models here.
 
 class PortfolioAdmin(admin.ModelAdmin):
@@ -22,3 +22,4 @@ admin.site.register(Comment)
 admin.site.register(Reply)
 admin.site.register(Category)
 admin.site.register(SlideImage)
+admin.site.register(PaymentCode)

@@ -2117,6 +2117,27 @@ section#blog .meta i {
   margin-bottom: 70px;
 }
 
+/***  Payment Page  ***/
+body.payment {
+  background-color: #fff;
+  overflow: auto;
+}
+
+body.payment .container-fluid.page-title {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url(../img/blog/banner.jpg);
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+body.payment .container-fluid.page-title .content-banner {
+  background-color: rgba(0, 0, 0, .8);
+  padding: 200px 30px;
+  width: 100%;
+  text-align: center;
+}
+
 /*** Blog Page ***/
 
 body.blog .content {
@@ -2289,6 +2310,15 @@ body.blog .meta i {
   margin: 0;
   padding: 20px 0;
 }
+.comments-list li {
+  background: #1A2634 !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
 
 .comments-list .comment {
   border-bottom: 1px solid #ddd;
@@ -2303,14 +2333,14 @@ body.blog .meta i {
 }
 
 .comments-list img.comment-avatar {
-  width: 82px;
-  height: 82px;
+  width: 52px;
+  height: 52px;
   border-radius: 100%;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 .comments-list .comment-body {
-  margin-left: 110px;
+  margin-left: 80px;
 }
 
 .comments-list .comment-author {

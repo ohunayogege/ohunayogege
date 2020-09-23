@@ -5,6 +5,14 @@ from datetime import timedelta
 from datetime import datetime as dt
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
+import random
+import string
+
+ALPHANUMERIC_CHARS = string.ascii_lowercase + string.digits
+STRING_LENGTH = 10
+
+def generate_random_string(chars=ALPHANUMERIC_CHARS, length=STRING_LENGTH):
+    return "".join(random.choice(chars) for _ in range(length))
 
 # Create your models here.
 
@@ -85,8 +93,8 @@ class Comment(models.Model):
 		return self.name
 @receiver(pre_save, sender=Comment)
 def update_comment_count(sender, instance, *args, **kwargs):
+	print(instance.blog.id)
 	get_old_count = Blog.objects.get(id=instance.blog.id)
-	print(get_old_count)
 	add_new_count = int(get_old_count.comment_count) + 1
 	Blog.objects.filter(id=instance.blog.id).update(comment_count=add_new_count)
 
@@ -103,3 +111,19 @@ class Reply(models.Model):
 
 	def __str__(self):
 		return self.name
+
+
+class PaymentCode(models.Model):
+	code = models.CharField(max_length=100, default='', blank=True)
+	name = models.CharField(max_length=100, default='')
+	mobile = models.CharField(max_length=100, default='', null=True)
+	price = models.DecimalField(decimal_places=2, max_digits=10, default=0.00)
+	description = models.TextField(default='', blank=True)
+
+	def __str__(self):
+		return self.name
+
+@receiver(pre_save, sender=PaymentCode)
+def update_ref_slug(sender, instance, **kwargs):
+    random_string = generate_random_string()
+    instance.code = random_string
