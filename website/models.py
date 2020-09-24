@@ -115,15 +115,18 @@ class Reply(models.Model):
 
 class PaymentCode(models.Model):
 	code = models.CharField(max_length=100, default='', blank=True)
-	name = models.CharField(max_length=100, default='')
+	firstname = models.CharField(max_length=100, default='')
+	lastname = models.CharField(max_length=100, default='', blank=True)
+	email = models.EmailField(default='', null=True)
 	mobile = models.CharField(max_length=100, default='', null=True)
 	price = models.DecimalField(decimal_places=2, max_digits=10, default=0.00)
 	description = models.TextField(default='', blank=True)
+	status = models.BooleanField(default=False)
 
 	def __str__(self):
-		return self.name
+		return self.firstname + ' ' + self.lastname
 
-@receiver(pre_save, sender=PaymentCode)
-def update_ref_slug(sender, instance, **kwargs):
-    random_string = generate_random_string()
-    instance.code = random_string
+# @receiver(pre_save, sender=PaymentCode)
+# def update_ref_slug(sender, instance, **kwargs):
+#     random_string = generate_random_string()
+#     instance.code = random_string

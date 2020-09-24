@@ -58,4 +58,6 @@ def ajax_comment(request):
 def payment(request):
     code = request.GET.get('code')
     payments = PaymentCode.objects.filter(code=code)
-    return render(request, 'payment.html', {'payments': payments})
+    paid = PaymentCode.objects.get(code=code)
+    price = paid.price*100
+    return render(request, 'payment.html', {'payments': payments, 'price': price})

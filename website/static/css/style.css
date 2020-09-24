@@ -62,7 +62,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   color: #555;
-  background: #fff;
+  background: #0D1219;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -2118,7 +2118,7 @@ section#blog .meta i {
 }
 
 /***  Payment Page  ***/
-body.payment {
+/*body.payment {
   background-color: #fff;
   overflow: auto;
 }
@@ -2137,7 +2137,7 @@ body.payment .container-fluid.page-title .content-banner {
   width: 100%;
   text-align: center;
 }
-
+*/
 /*** Blog Page ***/
 
 body.blog .content {
@@ -2157,7 +2157,7 @@ body.blog .btn.back:hover {
 }
 
 body.blog {
-  background-color: #fff;
+  background-color: #0D1219;
   overflow: auto;
 }
 

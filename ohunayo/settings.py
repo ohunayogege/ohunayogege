@@ -25,7 +25,7 @@ SECRET_KEY = 'y997kx&h6xt_eg0@p$0zkuz%4gq!)f1dm)$ed+rze+!46xg7*e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'bosstaste.ng']
 
 
 # Application definition
