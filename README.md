@@ -44,13 +44,13 @@
 
 ### 🚀 Projects Carousel
 <p align="center">
-  <img src="https://github.com/ohunayogege/Guest-House-NG/blob/master/public/images/glc_logo.png" width="220" alt="Naija Hot Trend"/>
+  <img src="https://github.com/ohunayogege/Blaze-Health-Foundation/blob/master/web/static/images/logo_white.png" width="220" alt="Blaze Health Foundation"/>
   <img src="https://github.com/ohunayogege/Guest-House-NG/blob/master/public/images/glc_logo.png" width="220" alt="Guest House Hotel"/>
   <img src="https://github.com/ohunayogege/YB-Dotab-POS/blob/master/public%2Fassets%2Fimg%2Flogo.png" width="220" alt="YB-Dotab POS"/>
 </p>
 
 <p align="center">
-  <b>LinkcreatorAI</b> | <b>FinzyAI</b> | <b>YB-Dotab POS</b> & more...
+  <b>Blaze Health Foundation</b> | <b>Guest House Hotel</b> | <b>YB-Dotab POS</b> & more...
 </p>
 
 ---
