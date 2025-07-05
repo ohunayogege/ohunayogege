@@ -7,11 +7,26 @@
 
 <img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
-- 🚀 I’m currently working on **LinkcreatorAI**, **FinzyAI**, and **YB-Dotab POS**.
+- 🚀 CEO @ 
+<p align="left">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=4000&pause=1000&color=38BDF8&width=435&lines=BITBIZ+NIG+LIMITED" alt="BITBIZ Animated Name" />
+</p>
+
 - 💻 I build **premium SaaS platforms**, **fintech systems**, and **mobile apps** with **Flutter**, **Django**, and **CodeIgniter**.
 - 🧑‍💻 My stack includes: `Flutter`, `Dart`, `Python`, `PHP`, `MySQL/PostgreSQL`, `Firebase`, `AWS`, `Linux`.
 - 🔥 Passionate about **AI-powered platforms**, **multi-tenancy**, and **optimizing for scale & UX**.
 - 💡 On a mission to empower businesses & NGOs with digital transformation.
+
+---
+
+### 🌟 Dynamic GIF Badges
+<p align="left">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&duration=4000&pause=1000&color=FACC15&width=450&lines=Techpreneur+%7C+SaaS+Builder;Full+Stack+Dev+%7C+Flutter%2C+Django%2C+CI4;Scaling+Businesses+Through+Tech" alt="Dynamic Badges" />
+</p>
+
+<p align="left">
+  <img src="https://github-profile-trophy.vercel.app/?username=ohunayogege&theme=flat&column=4&margin-w=15&margin-h=15" alt="trophies"/>
+</p>
 
 ---
 
@@ -24,6 +39,19 @@
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+---
+
+### 🚀 Projects Carousel
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/linkcreator.gif" width="220" alt="LinkcreatorAI"/>
+  <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/finzyai.gif" width="220" alt="FinzyAI"/>
+  <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/pos.gif" width="220" alt="YB-Dotab POS"/>
+</p>
+
+<p align="center">
+  <b>LinkcreatorAI</b> | <b>FinzyAI</b> | <b>YB-Dotab POS</b> & more...
+</p>
 
 ---
 
@@ -42,18 +70,33 @@
 
 ---
 
-### 🚀 Projects Highlight
-- 🔗 **[LinkcreatorAI](https://linkcreator.ai/)** — AI-powered smart linking for blogs.
-- 💸 **FinzyAI** — AI + fintech solution enhancing personal finance.
-- 🧾 **YB-Dotab POS** — Modern POS system with multi-branch, inventory, and customer debt modules.
-- 📡 **Naija Hot Trend** — Crypto & digital marketplace with API integrations.
+### ⚡ GitHub Activity Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=ohunayogege&theme=dracula&hide_border=true&area=true" alt="activity graph" />
+</p>
+
+---
+
+### 🌍 Visitor GeoMap
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-visitor-badge/main/dist/badge.svg?username=ohunayogege" alt="visitor badge"/>
+  <br/>
+  <img src="https://github.com/ohunayogege/ohunayogege/raw/main/assets/world-map.gif" width="600" alt="GeoMap"/>
+</p>
+
+---
+
+### 💬 Daily Coding Quote
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Daily Quote"/>
+</p>
 
 ---
 
 ### 🌱 Current Focus
-- Building **scalable multi-tenant SaaS platforms**.
+- Building **multi-tenant SaaS platforms** for businesses & NGOs.
 - Enhancing **UX with Glassmorphism & premium UI kits**.
-- Developing **advanced analytics dashboards** & integrations (Paystack, ByBit, Cloudinary).
+- Developing **advanced analytics dashboards**, payment integrations & real-time systems.
 
 ---
 
