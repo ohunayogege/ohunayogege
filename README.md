@@ -46,7 +46,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/linkcreator.gif" width="220" alt="LinkcreatorAI"/>
   <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/finzyai.gif" width="220" alt="FinzyAI"/>
-  <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/pos.gif" width="220" alt="YB-Dotab POS"/>
+  <img src="https://github.com/ohunayogege/YB-Dotab-POS/blob/master/public%2Fassets%2Fimg%2Flogo.png" width="220" alt="YB-Dotab POS"/>
 </p>
 
 <p align="center">
