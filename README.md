@@ -1,30 +1,69 @@
-### Hi there 👋 I'm Ohunayo :man_technologist:
+<h1 align="center">Hi 👋, I'm Ohunayo Gege</h1>
+<h3 align="center">Techpreneur | Full Stack Developer | SaaS Builder | Flutter Enthusiast | Django & CodeIgniter Expert</h3>
 
-I am a committed and  Full-Stack developer. I am passionate about building website applications, mobile application and I’m always adding new skills to my repertoire. I am a good team player that love to provide dynamic solutions.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ohunayogege&label=Profile%20views&color=0e75b6&style=flat" alt="profile views"/>
+</p>
 
-I worked for Touchcore Technology Limited, where I worked on projects like Fintech (Loan Management) applications, Hyperlink Web Scrapper, Lawfirm management App, and while i am currently working part-time with Sanwopay, i have built a landing page ([Sanwopay](https://sanwopay.com)), fintech mobile app (Sanwopay) and I am also managing the team as the leader while still handling the backend of the mobile app. I've been living and breathing Web development and Applications😍. Currently looking for opportunities. 
+<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
-When I am not coding I make researches on Software Development and programming and learn new updates on stacks I write. I enjoy cooking, music and travelling. 
+- 🚀 I’m currently working on **LinkcreatorAI**, **FinzyAI**, and **YB-Dotab POS**.
+- 💻 I build **premium SaaS platforms**, **fintech systems**, and **mobile apps** with **Flutter**, **Django**, and **CodeIgniter**.
+- 🧑‍💻 My stack includes: `Flutter`, `Dart`, `Python`, `PHP`, `MySQL/PostgreSQL`, `Firebase`, `AWS`, `Linux`.
+- 🔥 Passionate about **AI-powered platforms**, **multi-tenancy**, and **optimizing for scale & UX**.
+- 💡 On a mission to empower businesses & NGOs with digital transformation.
 
-### Talking about Personal Stuffs: 
+---
 
-- 🌱 My current Stacks: VueJs, Python/Django, Kotlin, PHP.
+### 🛠 Tech & Tools
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![CodeIgniter](https://img.shields.io/badge/-CodeIgniter-EF4223?style=flat-square&logo=codeigniter&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-- 📫 How to reach me: ohunayogege@gmail.com
--  #### WhatsApp: +2348149983395
+---
 
-**Languages and Tools:** 
+### 📈 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ohunayogege&show_icons=true&theme=transparent&hide_border=true" alt="Ohunayo's GitHub Stats"/>
+</p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ohunayogege&theme=transparent&hide_border=true" alt="Ohunayo's GitHub Streak"/>
+</p>
 
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kotlin/kotlin.png"></code>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ohunayogege&layout=compact&theme=transparent&hide_border=true" alt="Ohunayo's Top Languages"/>
+</p>
 
+---
 
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/ohunayogege)](https://twitter.com/ohunayogege) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ohunayogege/)](https://www.linkedin.com/in/ohunayogege) [![Instagram Badge](https://img.shields.io/badge/-Instagram?style=flat-square&labelColor=833ab4&logo=Instagram&logoColor=white&link=https://www.instagram.com/ohunayogege/)](https://www.instagram.com/ohunayogege)
+### 🚀 Projects Highlight
+- 🔗 **[LinkcreatorAI](https://linkcreator.ai/)** — AI-powered smart linking for blogs.
+- 💸 **FinzyAI** — AI + fintech solution enhancing personal finance.
+- 🧾 **YB-Dotab POS** — Modern POS system with multi-branch, inventory, and customer debt modules.
+- 📡 **Naija Hot Trend** — Crypto & digital marketplace with API integrations.
 
+---
+
+### 🌱 Current Focus
+- Building **scalable multi-tenant SaaS platforms**.
+- Enhancing **UX with Glassmorphism & premium UI kits**.
+- Developing **advanced analytics dashboards** & integrations (Paystack, ByBit, Cloudinary).
+
+---
+
+### 🤝 Connect With Me
+<p align="left">
+  <a href="mailto:ohunayogege@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/ohunayogege"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://twitter.com/ohunayogege"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white"></a>
+</p>
+
+---
+
+<h4 align="center">⚡ Empowering businesses & individuals through tech. Let's build the future together!</h4>
