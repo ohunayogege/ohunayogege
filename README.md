@@ -44,8 +44,8 @@
 
 ### 🚀 Projects Carousel
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/linkcreator.gif" width="220" alt="LinkcreatorAI"/>
-  <img src="[https://raw.githubusercontent.com/ohunayogege/ohunayogege/main/assets/finzyai.gif](https://github.com/ohunayogege/Guest-House-NG/blob/master/public/images/glc_logo.png?raw=true)" width="220" alt="Guest House Hotel"/>
+  <img src="https://github.com/ohunayogege/Guest-House-NG/blob/master/public/images/glc_logo.png" width="220" alt="Naija Hot Trend"/>
+  <img src="https://github.com/ohunayogege/Guest-House-NG/blob/master/public/images/glc_logo.png" width="220" alt="Guest House Hotel"/>
   <img src="https://github.com/ohunayogege/YB-Dotab-POS/blob/master/public%2Fassets%2Fimg%2Flogo.png" width="220" alt="YB-Dotab POS"/>
 </p>
 
